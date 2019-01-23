@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <canvas id="game" class="square" width="1000" height="1000">
+    <script src="main.js"></script>
+  </body>
+  <style>
+    html, body
+    {
+    margin: 0;
+    padding: 0;
+    }
+    
+    html, body, .square
+    {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    }
+
+    body {
+    background: black;
+    }
+
+    #game {
+    background: white;
+    }
+
+    .square
+    {
+    margin: auto
+    }
+
+    @media (orientation: landscape) {
+        .square {
+            width: calc(100vh);
+            height: calc(100vh);
+        }
+    }
+    @media (orientation: portrait) {
+        .square {
+            width: calc(100vw);
+            height: calc(100vw);
+        }
+    }
+  </style>
+</html>
